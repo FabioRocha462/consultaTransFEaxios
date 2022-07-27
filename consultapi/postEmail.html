@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <title>pesquisar por email</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">Enviar Loja</h1>
+        <form id="form-email" class="form">
+            <div class="row">
+                <div class="form___group">
+                    <input autofocus autocomplete="off" class="form___data"  name="email"
+                         placeholder="Email" required type="email">
+
+                </div>
+            </div>
+            <div class="row has-alignCenter">
+                <button class="form__button" type="submit">Enviar Loja</button>
+            </div>
+        </form>
+
+        <div id="output"></div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/postEmail.js"></script>
+</body>
+</html>
